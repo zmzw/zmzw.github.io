@@ -1,4 +1,4 @@
-const live2d_path = "https://localhost:4000/live2d-widget-master/";
+const live2d_path = "http://localhost:4000/live2d-widget-master/";
 
 $("<link>").attr({href: live2d_path + "waifu.css", rel: "stylesheet", type: "text/css"}).appendTo("head");
 //waifu.css的绝对路径
