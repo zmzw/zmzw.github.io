@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-25T08:21:43.319Z</updated>
+  <updated>2019-02-13T07:53:47.752Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,99 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>快速采购</title>
+    <link href="http://yoursite.com/2019/02/13/%E5%BF%AB%E9%80%9F%E9%87%87%E8%B4%AD/"/>
+    <id>http://yoursite.com/2019/02/13/快速采购/</id>
+    <published>2019-02-13T07:36:56.000Z</published>
+    <updated>2019-02-13T07:53:47.752Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;快速采购&quot;&gt;&lt;a href=&quot;#快速采购&quot; class=&quot;headerlink&quot; title=&quot;快速采购&quot;&gt;&lt;/a&gt;快速采购&lt;/h1&gt;&lt;h2 id=&quot;1-数据表&quot;&gt;&lt;a href=&quot;#1-数据表&quot; class=&quot;headerlink&quot; title=&quot;1 数据表&quot;&gt;&lt;/a&gt;1 数据表&lt;/h2&gt;&lt;h3 id=&quot;1-1-历史订单统计临时表&quot;&gt;&lt;a href=&quot;#1-1-历史订单统计临时表&quot; class=&quot;headerlink&quot; title=&quot;1.1 历史订单统计临时表&quot;&gt;&lt;/a&gt;1.1 历史订单统计临时表&lt;/h3&gt;&lt;p&gt;表名：mph_order_history_statistics_tmp&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;历史订单商品数据统计临时表,通过每日任务orderHistoryStatisticsTask查询前一日以用户ID、供应商ID和商品ID为维度统计商品的购买信息并插入此表，在开始每日任务前需清空临时表。此表同时为查询商品最近30天销量提供支持。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;字段名&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;tmp_id&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;主键&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;tmp_g_id&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;商品ID&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;tmp_seller_id&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;供应商ID&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;tmp_e_id&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;终端ID&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;tmp_buy_count&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;下单次数累计&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;tmp_buy_money_total&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;下单金额累计&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;tmp_buy_goods_total&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;商品购买数量累计&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="搜索" scheme="http://yoursite.com/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+      <category term="采购" scheme="http://yoursite.com/tags/%E9%87%87%E8%B4%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/01/30/hello-world/"/>
+    <id>http://yoursite.com/2019/01/30/hello-world/</id>
+    <published>2019-01-30T06:21:00.287Z</published>
+    <updated>2019-01-25T08:14:00.343Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="next" scheme="http://yoursite.com/tags/next/"/>
+    
+      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>控销专区</title>
@@ -96,36 +189,6 @@
     
       <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    
-      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/01/22/hello-world/"/>
-    <id>http://yoursite.com/2019/01/22/hello-world/</id>
-    <published>2019-01-22T08:08:08.634Z</published>
-    <updated>2019-01-25T08:14:00.343Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-      <category term="next" scheme="http://yoursite.com/tags/next/"/>
     
       <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
     
