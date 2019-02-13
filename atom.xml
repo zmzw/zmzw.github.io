@@ -80,36 +80,6 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/01/30/hello-world/"/>
-    <id>http://yoursite.com/2019/01/30/hello-world/</id>
-    <published>2019-01-30T06:21:00.287Z</published>
-    <updated>2019-01-25T08:14:00.343Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-      <category term="next" scheme="http://yoursite.com/tags/next/"/>
-    
-      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
     <title>控销专区</title>
     <link href="http://yoursite.com/2019/01/25/%E6%8E%A7%E9%94%80%E7%AE%A1%E7%90%86/"/>
     <id>http://yoursite.com/2019/01/25/控销管理/</id>
