@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[2019-02-24周末快乐时光]]></title>
-    <url>%2F2019%2F02%2F13%2F2019-02-24%E5%91%A8%E6%9C%AB%E5%BF%AB%E4%B9%90%E6%97%B6%E5%85%89%2F</url>
-    <content type="text"><![CDATA[]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>周末</tag>
-        <tag>园博园</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[快速采购]]></title>
     <url>%2F2019%2F02%2F13%2F%E5%BF%AB%E9%80%9F%E9%87%87%E8%B4%AD%2F</url>
     <content type="text"><![CDATA[快速采购1 数据表1.1 历史订单统计临时表表名：mph_order_history_statistics_tmp 历史订单商品数据统计临时表,通过每日任务orderHistoryStatisticsTask查询前一日以用户ID、供应商ID和商品ID为维度统计商品的购买信息并插入此表，在开始每日任务前需清空临时表。此表同时为查询商品最近30天销量提供支持。 字段名 描述 tmp_id 主键 tmp_g_id 商品ID tmp_seller_id 供应商ID tmp_e_id 终端ID tmp_buy_count 下单次数累计 tmp_buy_money_total 下单金额累计 tmp_buy_goods_total 商品购买数量累计 1.2 历史订单统计表表名：mph_order_history_statistics 历史订单商品数据统计表,每日任务中将临时表中的数据插入或更新到此表。此表为快速采购模块查询提供支持。 字段名 描述 id 主键 g_id 商品ID seller_id 供应商ID e_id 终端ID buy_count 下单次数累计 buy_money_total 下单金额累计 buy_goods_total 商品购买数量累计 create_time 创建时间 update_time 更新时间 2 接口列表2.1 www快速搜索查询接口 https://[域名]/goods/quickPurchase.html 请求参数 序号 名称 必填 类型 参数说明 1 mphsess_id Y String Session ID(保存在cookie中) 2 pi N Integer 分页页码，默认为1 3 ps N Integer 分页大小，默认为10 4 sellerId N Integer 页面选中的供应商ID 5 suId N Integer 旗舰商城suId 6 recently_browse N String 最近浏览商品IDs(保存在cookie中) 响应参数 序号 名称 必填 类型 参数说明 1 suId Y Integer 旗舰商城ID 2 sellerId Y Integer 当前选中的供应商ID 3 suName Y String 当前选中的供应商名称 4 suMap Y Map 有采购权限的供应商名称map 5 iconMap Y Map 促销标签map 6 memberGoodsPriceWrapper Y List 快速采购商品列表，注释(2) 7 cartGoodsList Y List 购物车商品列表 8 type Y Integer 见注释(1) 9 pagerTotal Y Integer 总页数 10 pagerInfo Y PagerInfo 分页对象 注释(1): type字段用于前端的文案展示： 0：有采购关系，有数据返回 2：与当前传入sellerId供应商无采购关系 3：有采购关系（或者与当前sellerId有采购关系），查询和搜索无结果 4：没有与任何一家供应商建立采购关系 注释(2):当type等于0时，代表搜索结果有记录，商品列表信息展示在前端页面的快速搜索列表区域。反之，则商品列表为最近浏览的商品信息，展示在 “为您推荐”区域。 2.2 passport快速搜索查询接口 https://[域名]/goodsSearch/quickPurchase_5_3_10.json 请求参数 序号 名称 必填 类型 参数说明 1 uId Y Integer 用户ID 2 mphsess_id Y String Session ID 3 pageNo N Integer 分页页码，默认为1 4 pageSize N Integer 分页大小，默认为10 5 sellerId N Integer 页面选中的供应商ID 6 suId N Integer 旗舰商城suId 7 siteId Y Integer 当前站点ID 8 siteProvince Y String 当前站点 响应参数 序号 名称 必填 类型 参数说明 1 code Y Integer 返回状态代码：0，失败；1，成功 2 msg Y String 返回信息 3 mphsess_id Y String Session ID 4 suId Y Integer 旗舰商城ID 5 sellerId Y Integer 当前选中的供应商ID 6 suName Y String 当前选中的供应商名称 7 suMap Y Map 有采购权限的供应商名称map 8 type Y Integer 见注释(1) 9 memberGoodsPriceWrapper Y List 快速采购商品列表 10 cartGoodsList Y List 购物车商品列表 11 totalCount Y Integer 查询商品总个数 注释(1): type字段用于前端的文案展示： 0：有采购关系，有数据返回 1：无采购关系 （提示：您还没有建立采购关系，马上申请采购关系） 2：与当前供应商无采购关系（提示：您还没有与该供应商建立采购关系，马上申请采购关系） 3：搜索无结果（提示：抱歉，没有找到您想要的搜索结果） 3 流程图3.1 订单数据统计定时任务执行流程图 3.2 快速采购流程图]]></content>
@@ -22,6 +10,18 @@
       <tags>
         <tag>搜索</tag>
         <tag>采购</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[2019-02-24周末快乐时光]]></title>
+    <url>%2F2019%2F02%2F13%2F2019-02-24%E5%91%A8%E6%9C%AB%E5%BF%AB%E4%B9%90%E6%97%B6%E5%85%89%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>周末</tag>
+        <tag>园博园</tag>
       </tags>
   </entry>
   <entry>
